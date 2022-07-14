@@ -1,0 +1,118 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{% static './img/logo.jpg' %}" type="image/x-icon">
+
+    <!-- font awsome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static './css/pay.css' %}">
+
+    <title>payment</title>
+  </head>
+  <body>
+    <main> 
+      <div class="container mt-5">
+        <h1 class="text-center">Payment</h1>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="payment-list">
+            <div class="alert alert-primary fees-info" role="alert">
+              <li>
+                <strong class="text-primary">For Intregrated science :</strong>  Rs 12700 + registration fee Rs - 300 and (total Rs - 13000)
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-info border border-light rounded-circle">
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+              </li>
+            </div>
+            <div class="alert alert-primary fees-info" role="alert">
+              <li>
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-info border border-light rounded-circle">
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+                <strong class="text-primary">For General science :</strong>  Rs 10700 + registration fee Rs - 300 and (total Rs - 11000)
+              </li>
+            </div>
+            <div class="alert alert-primary fees-info" role="alert">
+              <li>
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-info border border-light rounded-circle">
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+                <strong class="text-primary">For Arts :</strong>  Rs 9700 + registration fee Rs - 300 and (total Rs - 10000)
+              </li>
+            </div>
+            <div class="alert alert-primary fees-info" role="alert">
+              <li>
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-info border border-light rounded-circle">
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+                <strong class="text-primary">Note : </strong>All online admitted students will get a hard copy of prospectus when he/she come to college
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="account mt-5">
+                <h5> Students can pay fees through UPI, NEDT, IMPS or bank transfer system</h5>  
+                <h5> <strong class="text-primary">Insitution Account Number : </strong>  7010050003810</h5>
+                <h5><strong class="text-primary">IFSC Number : </strong> PUNB10RRDAB</h5>
+                <h5><strong class="text-primary">UPI code  :</strong> 8638256227@okbizaxis</h5>
+            </div>
+    
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+            <div class="container text-center img-container">
+              <img src="{% static './img/payment/qrcode1.jpeg' %}" alt="" width="500" height="600">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="payment_src container">
+        <form class="needs-validation" method="post" action="/pay/" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="mb-3">
+            <input type="file" class="form-control" name="verifyss" aria-label="file example" required>
+            <div class="invalid-feedback">Upload Your Payment Screan Shot here</div>
+          </div>
+          <button class="btn submit-btn" href="" type="submit">Upload Screanshot<i class="fas fa-long-arrow-alt-right"></i></button>
+        </form>
+        <p>Upload the screanshot of your payment receipt our administrator will verify the receipt and then you can donwload your admission final form</p>
+        <p>For any query related admission student can contact our administrator <a href="contact.html">click here</a> to visit our contact page or your can call on this number <a href="#">+91 093654 17166</a></p>
+      </div>
+    </main> 
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+    </script>
+  </body>
+</html>

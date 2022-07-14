@@ -1,0 +1,137 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- facveicon -->
+    <link rel="shortcut icon" href="{% static './img/logo.jpg' %}" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- font awsome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="{% static './css/authMsg.css' %}">
+
+    <title>Message from Principal and BOD</title>
+</head>
+
+<body>
+
+    <!-- header area  -->
+
+    <header class="header">
+        {% include 'components/navbar.html' %}
+    </header>
+
+    <!-- header area  -->
+
+    <!-- main area  -->
+    <main>
+
+        <section class="msg">
+            <div class="container">
+                <div class="title-text text-center">
+                    <h1>Message from Principal and BOD</h1>
+                </div>
+                <div class="auth-message-area">
+                    <div class="auth-img">
+                        <div class="col-lg-4 col-sm-6 col-md-4">
+                            <img class="image-fluid" src="{% static './img/teachers/Pradip_Gogoi.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="message-area">
+                        <h1 class="name text-capitalize">Message from Principal</h1>
+                        <h4 class="writer-name">Mr. Pradip Gogoi</h4>
+                        <p class="message-body">
+                            <span class="selutation">Dear Parents and Students</span> <br>
+                            It gives me immense joy to present the overview of the experiential learning system of our
+                            Academy through this prospectus. A senior secondary school of Science and Arts, Brilliant
+                            Academy encourages every child to participate whole-heartedly.
+                            Quoting Mandela, I would like to ensure that the education we impart shall not only empower
+                            the students for their future endeavors but also shall urge their holistic growth and
+                            development. They are encouraged to explore their potentials and achieve their personal best
+                            in all the aspects of life. Focusing on the development of their individual identity, the
+                            students are challenged and engaged through a lot of learning opportunities as our Academy
+                            organizes annual programmers that help in developing zeal in being creative, confident and
+                            resilient that will ensure an independent and moral way of living in the long run.
+                            I am also very fortunate to work with a dedicated, innovative and caring faculty members who
+                            have contributed immensely to the well-being of our institution. Apart from academic
+                            qualifications, their constant support and encouragement is evident throughout their
+                            service. Working and learning together every single day, we strive to provide our students
+                            the best environment possible.
+                            Welcoming all to the family of Brilliant Academy, I assure never to fail you in any aspect
+                            of education that we promise to impart. I hope this prospectus shall give you a deeper
+                            insight to all requirements you seek for.
+                            Best wishes and regards.
+                        </p>
+                    </div>
+                </div>
+                <div class="auth-message-area">
+                    <div class="message-area">
+                        <h1 class="name text-capitalize">Message from the Board of Directors</h1>
+                            <div class="row BOD mt-5 mb-4">
+                                <div class="col-lg-2 col-md-6 col-sm-6 mb-2">
+                                    <img src="{% static './img/teachers/MANIKANTA_BORAH.jpg' %}" alt="" style="border-radius : 5px;">
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 mb-2">
+                                    <img src="{% static './img/teachers/PRANJAL_BORGOHAIN.jpg' %}" alt="" style=" border-radius : 5px;">
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 mb-2">
+                                    <img src="{% static './img/teachers/iftikar.jpg' %}" alt="" style=" border-radius : 5px;">
+                                </div>
+                            </div>
+                        <p class="message-body">
+                            Welcome all of you to the new academic session of Brilliant Academy- an institution with
+                            difference. We are very happy and thrilled to be partnering with you in establishing an
+                            exciting educational journey in fulfilling the dreams of our children. In this journey
+                            filled with excitement, we will together engage in a holistic exploration of the education
+                            that we promise to impart. With individual care and a friendly environment, we strive to
+                            cultivate the working of inherent potentials that exist in every student.
+                            Well, in the age of globalization, the world has turned into a village and our institution
+                            leaves no stone unturned in propelling the internal and external transformation that shall
+                            foster and nurture in the children the ability to fit in globally. Taking in consideration
+                            both the modern and traditional ways of imparting knowledge, we strive to give the best of
+                            everything that shall definitely contribute to the nation-building. The methodology we adopt
+                            encourages the students’ imagination to spread wings and not restrict their thought
+                            processes. In addition, our school is encompassed with talented, young and well-qualified
+                            teachers who pull out all the stops in delivering their sincere service. Thus, we can
+                            solemnly vouch for the quality of education that we intend to impart, considering the
+                            excellence of our literati.
+                            To conclude, we would like to stress on the fact that we work together as an entity in
+                            moulding the best possible future for our students. Ergo, it is an earnest appeal to the
+                            parents and the students to work together in unity which shall help in achieving the desired
+                            and targeted result. Consequently, we believe, it will significantly contribute in creating
+                            a better and a healed future for the ailing earth we live in.
+                            This brochure will take you on a tour as you will get the glimpses of various activities and
+                            the rich diversity of our Academy in fulfilling the dreams of our young hearts.
+                            Thank you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- main area  -->
+
+    <!-- footer area -->
+    {% include "components/footer.html" %}
+
+    <!-- footer area -->
+
+</body>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous" async>
+</script>
+
+</html>

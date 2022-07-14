@@ -1,0 +1,191 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- facveicon -->
+    <link rel="shortcut icon" href="{% static './img/logo.jpg' %}" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- font awsome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="{% static './css/admission_process.css' %}">
+
+    <title>Admission Info</title>
+</head>
+
+<body>
+
+    <!-- header area  -->
+
+    <header class="header">
+      {% include 'components/navbar.html' %}
+    </header>
+
+    <!-- header area  -->
+
+
+    <!-- main area  -->
+    <main>
+        <section class="section-1">
+            <div class="container">
+                <div class="offline-admission">
+                    <div class="head">
+                        <h1>Procedure For Offline Admission</h1>
+                    </div>
+                    <div class="billow-text">
+                        <p class="offline">
+                            The Prospectus which contains the prescribed application form for admission can be obtained
+                            from the administrative office. No duplicate forms will be established during admission.
+                            Kindly refer to the following points for detailed information
+                        </p>
+                        <li class="sub-title">Free Admission</li>
+                        <p class="sub">
+                            <ul>
+                                <li class="my-2">
+                                    For students scoring above 90% in HSLC Examination (Only for General Science and Arts)
+                                </li>
+                                <li>
+                                    For meritorious students belonging to economically backward class, 5% seats are reserved in each streams (Only for General Science and Arts)
+                                </li>
+                            </ul>
+                        </p>
+                        <li class="sub-title mt-5">Documents to be submitted</li>
+                        <p class="sub">
+                            <ul>
+                                <li class="mt-2">
+                                    Admit card of the student
+                                </li>
+                                <li class="mt-2">
+                                    Caste certificate (if any)
+                                </li>
+                                <li class="mt-2">
+                                    Four passport sized photos of the student
+                                </li>
+                            </ul>
+                        </p>
+                        <li class="sub-title mt-5">Additional information</li>
+                        <p class="sub">
+                            <ul>
+                                <li class="mt-2">
+                                    Original documents must be produced at the time of selection for admission.
+                                </li>
+                                <li class="mt-2">
+                                    Application forms should be completely filled and submitted to the administrative
+                                    office before the last date as notified by the authority of Academy.
+                                </li>
+                                <li>
+                                    To Download our offline admission form <a href="{% static '' %}">click here</a>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-2">
+            <div class="container">
+                <div class="offline-admission offline">
+                    <div class="head">
+                        <h1>Procedure For Online Admission</h1>
+                    </div>
+                    <div class="billow-text">
+                        <p class="offline">
+                            For online admission please follow the steps given bellow.
+                        </p>
+                        <li class="sub-title">Account Creation</li>
+                        <p class="sub">
+                            <ul>
+                                <li class="my-2">
+                                    First user have to register himself in our webiste. to register <a href="{% url 'register' %}">click
+                                        here</a>
+                                </li>
+                                <li class="my-2">
+                                    After registration students can fill up their admission form.
+                                </li>
+                                <li class="my-2">
+                                    After submission of form students will get a verifcation message from academy.
+                                </li>
+                                <li class="my-2">
+                                    After verifcation , students can login and pay their admission fees.
+                                </li>
+                            </ul>
+                        </p>
+                        <li class="sub-title mt-5">Documents to be submitted</li>
+                        <p class="sub">
+                            <ul>
+                                <li class="my-2">
+                                    admit card (mandatory)
+                                </li>
+                                <li class="my-2">
+                                    Caste certificate (if any)
+                                </li>
+                                <li class="my-2">
+                                    Passport size photo of student (mandatory)
+                                </li>
+                            </ul>
+                        </p>
+                        <li class="sub-title mt-5">Free Admission</li>
+                        <p class="sub">
+                            <ul>
+                                <li class="my-2">
+                                    For students scoring above 90% in HSLC Examination
+                                </li>
+                                <li class="my-2">
+                                    For meritorious students belonging to economically backward class.
+                                </li>
+
+                                <li class="my-2">
+                                    For free admission please contact to our administrative .to view our contact page <a
+                                        href="/contact/">click here</a>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-3">
+            <div class="container">
+                <div class="fees-structure" id="fees-structure">
+                    <h1 class="intro-fees">
+                        Fee Structure
+                    </h1>
+                    <div class="fees-info-img">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img src="{% static './img/science_fees.jpg' %}" alt="fee-structure" class="image-fluid" style="width: 100%; height : 100%;">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img src="{% static './img/arts_fees.jpg' %}" alt="fee-structure" class="image-fluid" style="width: 100%; height : 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main area  -->
+    <!-- footer area -->
+    {% include "components/footer.html" %}
+
+    <!-- footer area -->
+
+</body>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+</script>
+
+</html>

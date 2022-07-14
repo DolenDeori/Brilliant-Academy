@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background: none;
+  background-color: #f0f0f088;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(40deg, #0591FE 0%, #58B5FE 100%);
+  border-radius: 5px;
+}
+
+header .main-nav {
+  position: fixed;
+  background: #FFFFFF;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 999;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+  -webkit-box-shadow: 1px 0px 10px #c2c2c2;
+          box-shadow: 1px 0px 10px #c2c2c2;
+}
+
+header nav {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background: white;
+  margin: 0;
+  padding: 0 !important;
+}
+
+header nav .navbar-brand img {
+  height: 100px;
+}
+
+@media screen and (max-width: 480px) {
+  header nav .navbar-brand img {
+    height: 80px;
+  }
+}
+
+header nav .navbar-collapse ul li {
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  header nav .navbar-collapse ul li {
+    font-size: 15px;
+    margin-left: .1rem;
+    margin-right: .1rem;
+  }
+}
+
+header nav .navbar-collapse ul li a {
+  color: black !important;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+}
+
+header nav .navbar-collapse ul li a:hover {
+  color: #0A93FE !important;
+}
+
+header nav .navbar-collapse ul li a.active {
+  color: #F79B20 !important;
+}
+
+header nav .navbar-collapse ul li ul li:hover {
+  border-left: 3px solid #0A93FE;
+}
+
+header nav .navbar-collapse ul li ul li a:hover {
+  color: #000000 !important;
+}
+
+@media screen and (max-width: 900px) {
+  header nav .navbar-collapse .Right ul.navbar-nav {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header nav .navbar-collapse .Right ul.navbar-nav button {
+    margin-bottom: 1rem;
+  }
+}
+
+header nav .navbar-collapse .Right ul.navbar-nav li a {
+  padding: .5rem .7rem;
+  border-radius: 5px;
+  color: #FFFFFF !important;
+  -webkit-transition: .2 ease;
+  transition: .2 ease;
+}
+
+@media screen and (max-width: 1200px) {
+  header nav .navbar-collapse .Right ul.navbar-nav li a {
+    font-size: 12px;
+    margin: .4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header nav .navbar-collapse .Right ul.navbar-nav li a {
+    font-size: 12px;
+    margin: 0rem;
+    margin-bottom: .7rem;
+  }
+}
+
+header nav .navbar-collapse .Right ul.navbar-nav li a:hover {
+  -webkit-box-shadow: 2px 5px 10px rgba(42, 42, 42, 0.233);
+          box-shadow: 2px 5px 10px rgba(42, 42, 42, 0.233);
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+header nav .navbar-collapse .Right ul.navbar-nav li a#admission {
+  background: linear-gradient(40deg, #0591FE 0%, #58B5FE 100%);
+}
+
+header nav .navbar-collapse .Right ul.navbar-nav li a#feespay {
+  background: linear-gradient(40deg, #0591FE 0%, #58B5FE 100%);
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .top-bar {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 10% 50%;
+          transform-origin: 10% 50%;
+}
+
+.navbar-toggler .bottom-bar {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+          transform-origin: 10% 90%;
+}
+
+.toggler-icon {
+  width: 30px;
+  height: 3px;
+  border-radius: 2rem;
+  background-color: #F79B20;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  display: block;
+}
+
+.middle-bar {
+  margin: 5px auto;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=1);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+* {
+  color: black;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 2rem;
+  color: #F79B20;
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+}
+
+img {
+  height: 50%;
+  width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+main .account {
+  padding-right: 2rem;
+  border-right: 2px solid #383838;
+}
+
+@media screen and (max-width: 900px) {
+  main .account {
+    text-align: center;
+    border: none;
+    margin-bottom: 2rem;
+  }
+}
+
+main .account h5 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2rem;
+}
+
+main .payment-list {
+  margin-top: 3rem;
+}
+
+main .payment-list .fees-info {
+  background: #FFFFFF;
+  border: 2px solid;
+  font-family: "Poppins", sans-serif;
+}
+
+main form input {
+  font-family: "Roboto", sans-serif;
+}
+
+main form input:active, main form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+  border-color: #F79B20;
+}
+
+main form button.submit-btn {
+  background: linear-gradient(40deg, #F57910 0%, #FFBC02 100%);
+  border: 0;
+  color: #FFFFFF;
+  padding: .6rem 1rem;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+main form button.submit-btn:hover {
+  color: #FFFFFF;
+  -webkit-box-shadow: 1px 1px 10px #69696977;
+          box-shadow: 1px 1px 10px #69696977;
+}
+
+main form button.submit-btn i {
+  color: #FFFFFF;
+  margin-left: 1rem;
+}
+
+main .payment_src {
+  margin-top: 4rem;
+}
+/*# sourceMappingURL=pay.css.map */

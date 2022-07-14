@@ -1,0 +1,79 @@
+@import './responsive' , './variable' , './fonts';
+
+footer{
+    background: black;
+    .footer-area{
+        .short-link{
+            margin-top: 5rem;
+        }
+        .head-footer{
+            .link-head{
+                color: $color_white;
+                font-size: 30px;
+                font-family: $roboto;
+                margin-bottom: 2rem;
+            }
+            .links{
+                list-style-type: none;
+                margin-top: .4rem;
+                li{
+                    margin-bottom: 1rem;
+                    font-family: $roboto;
+                }
+                i{
+                    color: $color_white;
+                    font-size: 25px;
+                    margin-right: 1rem;
+                }
+                .a-link{
+                    color: $color_white;
+                    font-size: 15px;
+                    text-decoration: none;
+                    border-bottom: 1px solid $color_white;
+                    font-family: $roboto;
+                }
+            }
+        }
+
+        .short-link{
+            .head-footer{
+                .Contact{
+                    p{
+                        font-family: $roboto;
+                        color: $color_white;
+                        font-size: 15px;
+                        i{
+                            font-size: 20px;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright{
+        margin-top: 3rem;
+        padding-bottom: 1rem;
+        @include mobile{
+            text-align: center !important;
+        }
+        .brilliant-cw{
+            color: #ffffff8f;
+            font-family: $roboto;
+            font-size: 15px;
+        }
+        .adon-cw{
+            color: #ffffff8f;
+            font-family: $roboto;
+            text-align: right;
+            @include mobile{
+                text-align: center !important;
+            }
+            a{
+                color: $color_white;
+                border: none !important;
+            }
+        }
+    }
+}

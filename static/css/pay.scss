@@ -1,0 +1,80 @@
+@import './global/variable' ,'./global/responsive' , './global/navigation';
+*{
+    color:black;
+}
+h1{
+    @include title()
+}
+h4{
+    font-family: $roboto;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: $poppins;
+    margin-top: 1rem;
+}
+img{
+    height: 50%;
+    width:50%;
+    @include mobile{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+main{
+    .account{
+        padding-right: 2rem;
+        border-right: 2px solid $color_gray;
+        @include tablet{
+            text-align: center;
+            border: none;
+            margin-bottom: 2rem;
+        }
+        h5{
+            font-family: $roboto;
+            margin-bottom: 2rem;
+        }
+    }
+    .payment-list{
+        margin-top: 3rem;
+        .fees-info{
+            background: $color_white;
+            border: 2px solid;
+            font-family: $poppins;
+        }
+    }
+    form{
+        input{
+            &:active, 
+            &:focus{
+                box-shadow: none;
+                outline: 0;
+                border-color: $color_yellow;
+            }
+            font-family: $roboto;
+        }
+        button.submit-btn{
+            background: $yellow_gradient;
+            border: 0;
+            color: $color_white;
+            padding: .6rem 1rem;
+            border-radius: 5px;
+            font-family: $roboto;
+            &:hover{
+                color: $color_white;
+                
+                box-shadow: 1px 1px 10px #69696977;
+            }
+            i{
+                color: $color_white;
+                margin-left: 1rem;
+            }
+        }
+    }
+    .payment_src{
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,763 @@
+@import './global/navigation' , './global/fonts' , './global/variable' , './global/responsive' , './global/footer';
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@mixin title {
+    font-family: $roboto;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 2rem;
+    color: $color_yellow;
+    @include tablet-m{
+        font-size: 45px;
+    }
+    @include mobile{
+        font-size: 30px;
+    }
+}
+
+@mixin para {
+    font-family: $poppins;
+    font-size: 17px;
+    line-height: 2rem;
+    color: $color_gray;
+    margin-bottom: 3rem;
+    text-align: justify;
+    @include tablet-m{
+        font-size: 15px;
+        line-height: 1.7rem;
+    }
+    @include mobile{
+        font-size: 13px;
+    }
+}
+
+
+@mixin  datetime {
+    color: $color_white;
+    text-align: right;
+    position: absolute;
+    bottom: 1%;
+    right: 0%;
+    font-size: 30px;
+    h6{
+        padding: .5rem 4rem .5rem 1rem;
+        background: $color_blue;
+        font-family: $roboto;
+        color: $color_white;
+        font-weight: 600;
+        font-size: 20px;
+        border-bottom-left-radius:.3rem ;
+        border-top-left-radius: .3rem ;
+        @include tablet-m{
+            padding-right: 3rem;
+            font-size: 17px;
+        }
+        @include mobile{
+            
+            padding-right: 2rem;
+            font-size: 15px;
+        }
+        @include mobile-s{
+            font-size: 12px;
+        }
+    }
+}
+
+// hero section styling
+header{
+    position: relative;
+    background: linear-gradient(90deg , #0000008a 0% , #00000056 100%) , url("../img/hero.jpg") repeat fixed 100% ;
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include mobile{
+        height: 85vh;
+    }
+    .hero-image{
+        height: 100%;
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            .hero-content{
+                width: 90%;
+                @include tablet{
+                    width: 100%;
+                }
+                .hero-text{
+                    .ml10 {
+                        font-weight: 700;
+                        font-size: 80px;
+                        color: $color_white;
+                        font-family: $roboto;
+                        .letters{
+                            span{
+                                color: $color_white;
+                                font-weight: 500;
+                                font-size: 50px;
+                                @include mobile{
+                                    font-size:30px;
+                                }
+                                @include mobile-s{
+                                    font-size:20px;
+                                }
+                            }
+                        }
+                        @include midium-desktop{
+                            font-size: 50px;
+                        }
+                        @include mobile{
+                            font-size:35px;
+                        }
+                        @include mobile-s{
+                            font-size:25px;
+                        }
+                      }
+                }
+                .hero-para{
+                    .ml11 {
+                        font-size: 23px;
+                        color: $color_white;
+                        font-family: $poppins;
+                        @include tablet{
+                            font-size: 17px;
+                        }
+                        @include mobile{
+                            font-size: 14px;
+                        }
+                        @include mobile-s{
+                            font-size:12px;
+                        }
+                      }
+                }
+                .hero-button{
+                    margin-top: 1rem;
+                    a{
+                        color: $color_white;
+                        font-family: $roboto;
+                        text-decoration: none;
+                        border: 2px solid $color_white;
+                        padding: .7rem 2rem;
+                        border-radius: 5px;
+                        @include mobile{
+                            padding: .5rem 1.5rem;
+                        }
+                        &:hover{
+                            background: $color_white;
+                            color: $color_black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .datetime{
+            @include datetime();
+        }
+    }
+}
+
+
+.message{
+    position: fixed;
+    z-index: 1000;
+    top:20%; 
+    right:0%; 
+    border:2px 
+    solid $color_blue; 
+    background: white;
+    border-radius:0; 
+    border-top-left-radius:5px; 
+    border-bottom-left-radius:5px;  
+    width:40%; 
+    padding:2rem;
+    font-family: $roboto;
+    margin: 0;
+    button{
+        &:focus, 
+        &:active{
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+}
+
+
+.scroll-text{
+    font-size: 20px;
+    background: $color_blue;
+    height: 7vh;
+    font-family: $poppins;
+    color: $color_white;
+    p{
+        margin-top: .7rem;
+        @include tablet-m{
+            margin-top: .8rem;
+        }
+        @include tablet-m{
+            margin-top: 1rem;
+        }
+
+    }
+    @include mobile{
+        font-size: 13px;
+    }
+}
+// main section area
+
+main{
+
+    // section 1
+    section.section-1{
+        margin-top: 10rem;
+        .quick-start{
+            .head-text{
+                @include title();
+            }
+            .card{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding: 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                background: none;
+                border: none;
+                transition: .3s ease;
+                @include midium-desktop{
+                    padding: .8rem;
+                    padding-bottom: 2rem;
+                }
+                .icon{
+                    img{
+                        height: 30px;
+                        margin-bottom: 2rem;
+                    }
+                }
+                .heading{
+                    color: $color_black;
+                    font-family: $roboto;
+                    margin-bottom: 1rem;
+                    h2{
+                        font-size: 20px;
+
+                    }
+                }
+                .below-text{
+                    font-family: $poppins;
+                    color: $color_gray;
+                }
+                .button{
+                    margin-top: 2rem;
+                    a{
+                        color: $color_white;
+                        font-family: $roboto;
+                        background: $blue_gradient;
+                        text-decoration: none;
+                        padding: .5rem 2rem;
+                        border-radius: 6px;
+                        box-shadow: 0px 0px 9px #0592fe67;
+                        @include mobile-s{
+                            font-size:12px;
+                            padding: .5rem 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // section -1 
+
+
+    // section 2---------------------------------------------
+
+    section.section-2{
+        margin-top: 6rem;
+        .about-announcement{
+            transition: all .3s ease;
+            .about-description{
+                width: 90%;
+                margin-bottom: 3rem;
+                @include tablet{
+                    margin-bottom: 4rem;
+                    width: 100%;
+                }
+                .head-text-about{
+                    @include title();
+
+                }
+                .para{
+                    @include para();
+                }
+                .about-button{
+                    a{
+                        color: $color_white;
+                        background: $yellow_gradient;
+                        padding: .8rem 2rem;
+                        text-decoration: none;
+                        border-radius: 5px;
+                        font-family: $roboto;
+                        &:hover{
+                            box-shadow: 1px 3px 10px rgba(104, 104, 104, 0.404);
+                            transition: all .2s ease;
+                        }
+                        i{
+                            font-size: 1em;
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .announcement{
+                padding-left: 1rem;
+                border-left: 2px solid $color_gray;
+                @include tablet{
+                    margin-top: 5rem;
+                    padding-left: 0%;
+                    border: none;
+                }
+                @include tablet-m{
+                    margin-top: 4rem;
+                    border: none;
+                }
+                .announcement-head{
+                    font-family: $roboto;
+                    color: $color_black;
+                    margin-bottom: 3rem;
+                }
+                .an-info{
+                    .title{
+                        font-size: 16px;
+                        font-family: $roboto;
+                        border-bottom: 2px solid;
+                    }
+                    .para-an{
+                        font-size: 14px;
+                        font-family: $poppins;
+                        margin: 0;
+                    }
+                }
+                .button{
+                    a{
+                        background: $color_blue;
+                        border: 0;
+                        outline: none;
+                        font-family: $roboto;
+                    }
+                }
+            }
+        }
+    }
+    // section 2---------------------------------------------
+
+
+    // section - 3 -----------------------------------------
+    section.section-3{
+        margin-top: 5rem;
+        .alert{
+            .title{
+                font-family: $roboto;
+            }
+            .para-an{
+                font-family: $poppins;
+                margin: 0;
+                @include mobile{
+                    font-size: 12px;
+                }
+            }
+            .btn-close{
+                &:focus{
+                    outline: none !important;
+                    border: none;
+                    box-shadow: none;
+                }
+                &:active{
+                    outline: none !important;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    // section - 3 -----------------------------------------
+
+
+    // section 4-----------------------------------
+
+    section.section-4{
+        margin-top: 6rem;
+        .head-section-4{
+            margin-top: 4rem;
+            margin-bottom: 3rem;
+            h1{
+                @include title();
+            }
+        }
+        .photos{
+            .carousel{
+                border-radius: 5px;
+                overflow: hidden;
+                height: 450px;
+                img{
+                    transform: translate(-00% , -20%);
+                }
+                @include midium-desktop{
+                    height: 300px;
+                }
+                @include tablet{
+                    height: 200px;
+                }
+                @include mobile{
+                    height: 160px;
+                }
+            }
+        }
+        .gallery-button{
+            margin-top: 3rem;
+            @include mobile{
+                margin-top: 2rem;
+            }
+            a{
+                text-decoration: none;
+                color: $color_white;
+                background: $yellow_gradient;
+                padding: .7rem 2rem;
+                border-radius: 5px;
+                font-family: $roboto;
+                transition: .3s ease;
+                @include mobile{
+                    padding: .5rem 1rem;
+                    font-size: 15px;
+                }
+                &:hover{
+                    box-shadow: 1px 3px 10px rgba(104, 104, 104, 0.404);
+                    transition: all .2s ease;
+                }
+                i{
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+    // section 4-----------------------------------
+
+    //section 5 ------------------------------------
+
+    section.section-5{
+        margin-top: 10rem;
+        background: linear-gradient(90deg,#026cb3ef 0%, #026cb3e8 100%) , url("https://brilliant-space.nyc3.digitaloceanspaces.com/brilliant-static/img/specialmoments/specialMoments7.jpg") fixed 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .head-section-5{
+            padding-top: 2rem;
+            .title-section-4{
+                @include title();
+                color: $color_white;
+            }
+        }
+        .owl-carousel{
+            .owl-dot{
+                &.active{
+                    span{
+                        background: $color_black;
+                    }
+                }
+            }
+        }
+        .teachers{
+            background: #ffffff;
+            margin: 3rem;
+            padding: .7rem;
+            border-radius: 10px;
+            padding-left: 0;
+            padding-right: 0;
+            box-shadow: 1px 1px 10px rgba(36, 36, 36, 0.747);
+            @include tablet{
+                margin: 1.5rem;
+                transition: .5s ease;
+            }
+            .teacher-image{
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .name-st{
+                font-family: $poppins;
+                font-size: 17px;
+                font-weight: bold;
+                @include tablet{
+                    margin-top: 1rem !important;
+                }
+            }
+            .post{
+                margin: 0;
+                margin-bottom: .3rem;
+                font-weight: 600;
+                font-family: $roboto;
+            }
+            .para{
+                font-family: $poppins;
+                font-size: 14px;
+                margin: 0%;
+                @include tablet{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    //section 5 ------------------------------------
+
+    // sectio-6 ---------------------------------------------
+
+    section.section-6{
+        background: $color_light_gray;
+        .sub{
+            font-family: $roboto;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            text-transform: uppercase;
+            @include tablet-m{
+                padding-bottom: .5rem;
+            }
+            h3{
+                font-size: 30px;
+                font-weight: 600;
+                color: $color_blue;
+            }
+            p{
+                font-family: $poppins;
+                font-size: 35px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    // sectio-6 ---------------------------------------------
+
+    // section-7 ---------------------------------------------
+
+    section.section-7{
+        background: #5787c5;
+        padding-bottom: 2rem;
+        .head-section-7{
+            h1{
+                @include title();
+                margin-bottom: 3rem;
+                color: $color_white;
+                padding-top: .5rem;
+                @include tablet-m{
+                    padding-top: 3rem;
+                }
+            }
+        }
+        .owl-carousel{
+            .achivement{
+                background: #fdfdfdea;
+                box-shadow: 0px 0px 10px #e2e2e269;
+                padding: 0%;
+                margin: 0;
+                margin: 1rem;
+                padding: 1rem;
+                border-radius: 5px;
+                .st-image{
+                    // height: 150px;
+                    overflow: hidden;
+                    img{
+                        height: 100%;
+                        border-radius: 5px;
+                        @include mobile{
+                            height: 200px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .name-ac{
+                    font-family: $roboto;
+                    font-weight: 600;
+                    @include tablet-m{
+                        margin-top: 1rem;
+                    }
+                }
+                .achivement-name{
+                    margin: 0;
+                    padding: 0;
+                    font-family: $roboto;
+                    font-weight: 500;
+                    margin-bottom: .4rem;
+                    font-size: 18px;
+                    @include mobile{
+                        font-size: 15px;
+                    }
+                }
+                .para{
+                    @include para();
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+            .owl-dot{
+                &:hover > span{
+                    background: $color_white;
+                }
+                span{
+                    background: $color_white;
+                }
+                &.active{
+                    span{
+                        background: $color_black;
+                    }
+                }
+            }
+        }
+    }
+
+    // section-7 ---------------------------------------------
+
+
+    section.section-8{
+        margin-bottom: 3rem;
+        .head-section-8{
+            h1{
+                @include title();
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+            }
+        }
+        .owl-carousel{
+            .owl-dot{
+                transition: .5s ease;
+                margin: 0px;
+                &.active{
+                    transition: .5s ease;
+                    span{
+                        background: $color_black;
+                        transform: scale(1.2);
+                        transition: .6s ease;
+                    }
+                }
+            }
+            .feedback-box{
+                border-radius: 10px;
+                margin: 3rem;
+                @include tablet-m{
+                    margin: 1rem;
+                }
+                @include tablet-m{
+                    margin: .2rem;
+                }
+                .feedback-image{
+                    img{
+                        height:100px;
+                        width: 100px !important;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        margin: auto;
+                    }
+                }
+                
+                .feedback-info{
+                    padding: 1rem;
+                    margin-top: 1rem;
+                    h4{
+                        font-family: $roboto;
+                        font-weight: 600;
+                    }
+                    p.feedback-para{
+                        font-family: $poppins;
+                        font-size: 15px;
+                        text-align: center;
+                        @include tablet-m{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // section-9 --------------------------------------------
+
+    section.section-9{
+        padding-bottom: 5rem;
+        padding-top: 4rem;
+        background: #f1f1f1e8;
+        .map-area{
+            padding-bottom: 2rem;
+            .find-map{
+                .title-find-us{
+                    h1{
+                        @include title();
+                        font-size: 30px;
+                        color: $color_black;
+                    }
+                }
+            }
+            #map{
+                background: black;
+                height: 40vh;
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 1px 1px 10px rgba(71, 71, 71, 0.582);
+                @include tablet-m{
+                    height: 30vh;
+                }
+                @include mobile{
+                    height: 25vh;
+                }
+            }
+        }
+        
+        .download-links-area{
+            padding-bottom: 2rem;
+            .d-sec-title{
+                h1{
+                    @include title();
+                    font-size: 30px;
+                    color: $color_black;
+                }
+            }
+            .download-links{
+                li{
+                    list-style-type: none;
+                    font-size: 20px;
+                    font-family: $roboto;
+                    margin-bottom: 1rem;
+                    @include tablet-m{
+                        font-size: 15px;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-family: $roboto;
+                        @include tablet-m{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // section-8 --------------------------------------------
+}
+
+

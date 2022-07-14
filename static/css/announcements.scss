@@ -1,0 +1,39 @@
+@import "./global/footer", "./global/navigation", "./global/responsive", "./global/variable";
+
+main {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    .title {
+        h1 {
+            @include title();
+        }
+    }
+    .announcements {
+        .card {
+            border: 0;
+            .card-body {
+                .card-title {
+                    font-weight: 600;
+                    font-size: 24px;
+                    font-family: $roboto;
+                    @include mobile-s {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .card-subtitle {
+                color: $color_black;
+                font-weight: 400;
+                font-size: 15px;
+                font-family: $roboto;
+                @include mobile-s {
+                    font-size: 13px;
+                }
+            }
+            p {
+                @include para();
+                text-align: justify;
+            }
+        }
+    }
+}

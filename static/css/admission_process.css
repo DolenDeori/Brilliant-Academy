@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background: none;
+  background-color: #f0f0f088;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(40deg, #0591FE 0%, #58B5FE 100%);
+  border-radius: 5px;
+}
+
+header .main-nav {
+  position: fixed;
+  background: #FFFFFF;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 999;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+  -webkit-box-shadow: 1px 0px 10px #c2c2c2;
+          box-shadow: 1px 0px 10px #c2c2c2;
+}
+
+header nav {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background: white;
+  margin: 0;
+  padding: 0 !important;
+}
+
+header nav .navbar-brand img {
+  height: 100px;
+}
+
+@media screen and (max-width: 480px) {
+  header nav .navbar-brand img {
+    height: 80px;
+  }
+}
+
+header nav .navbar-collapse ul li {
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  header nav .navbar-collapse ul li {
+    font-size: 15px;
+    margin-left: .1rem;
+    margin-right: .1rem;
+  }
+}
+
+header nav .navbar-collapse ul li a {
+  color: black !important;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+}
+
+header nav .navbar-collapse ul li a:hover {
+  color: #0A93FE !important;
+}
+
+header nav .navbar-collapse ul li a.active {
+  color: #F79B20 !important;
+}
+
+header nav .navbar-collapse ul li ul li:hover {
+  border-left: 3px solid #0A93FE;
+}
+
+header nav .navbar-collapse ul li ul li a:hover {
+  color: #000000 !important;
+}
+
+@media screen and (max-width: 900px) {
+  header nav .navbar-collapse .Right ul.navbar-nav {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header nav .navbar-collapse .Right ul.navbar-nav button {
+    margin-bottom: 1rem;
+  }
+}
+
+header nav .navbar-collapse .Right ul.navbar-nav li a {
+  padding: .5rem .7rem;
+  border-radius: 5px;
+  color: #FFFFFF !important;
+  -webkit-transition: .2 ease;
+  transition: .2 ease;
+}
+
+@media screen and (max-width: 1200px) {
+  header nav .navbar-collapse .Right ul.navbar-nav li a {
+    font-size: 12px;
+    margin: .4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header nav .navbar-collapse .Right ul.navbar-nav li a {
+    font-size: 12px;
+    margin: 0rem;
+    margin-bottom: .7rem;
+  }
+}
+
+header nav .navbar-collapse .Right ul.navbar-nav li a:hover {
+  -webkit-box-shadow: 2px 5px 10px rgba(42, 42, 42, 0.233);
+          box-shadow: 2px 5px 10px rgba(42, 42, 42, 0.233);
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+header nav .navbar-collapse .Right ul.navbar-nav li a#admission {
+  background: linear-gradient(40deg, #0591FE 0%, #58B5FE 100%);
+}
+
+header nav .navbar-collapse .Right ul.navbar-nav li a#feespay {
+  background: linear-gradient(40deg, #0591FE 0%, #58B5FE 100%);
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .top-bar {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 10% 50%;
+          transform-origin: 10% 50%;
+}
+
+.navbar-toggler .bottom-bar {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+          transform-origin: 10% 90%;
+}
+
+.toggler-icon {
+  width: 30px;
+  height: 3px;
+  border-radius: 2rem;
+  background-color: #F79B20;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  display: block;
+}
+
+.middle-bar {
+  margin: 5px auto;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=1);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+footer {
+  background: black;
+}
+
+footer .footer-area .short-link {
+  margin-top: 5rem;
+}
+
+footer .footer-area .head-footer .link-head {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2rem;
+}
+
+footer .footer-area .head-footer .links {
+  list-style-type: none;
+  margin-top: .4rem;
+}
+
+footer .footer-area .head-footer .links li {
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+footer .footer-area .head-footer .links i {
+  color: #FFFFFF;
+  font-size: 25px;
+  margin-right: 1rem;
+}
+
+footer .footer-area .head-footer .links .a-link {
+  color: #FFFFFF;
+  font-size: 15px;
+  text-decoration: none;
+  border-bottom: 1px solid #FFFFFF;
+  font-family: "Roboto", sans-serif;
+}
+
+footer .footer-area .short-link .head-footer .Contact p {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+footer .footer-area .short-link .head-footer .Contact p i {
+  font-size: 20px;
+  margin-right: 1rem;
+}
+
+footer .copyright {
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  footer .copyright {
+    text-align: center !important;
+  }
+}
+
+footer .copyright .brilliant-cw {
+  color: #ffffff8f;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+footer .copyright .adon-cw {
+  color: #ffffff8f;
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+  footer .copyright .adon-cw {
+    text-align: center !important;
+  }
+}
+
+footer .copyright .adon-cw a {
+  color: #FFFFFF;
+  border: none !important;
+}
+
+main {
+  margin-top: 15rem;
+}
+
+main .offline-admission {
+  font-family: "Roboto", sans-serif;
+  margin-top: 6rem;
+}
+
+main .offline-admission h1 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #0A93FE;
+  border-bottom: 2px solid;
+}
+
+@media screen and (max-width: 900px) {
+  main .offline-admission h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main .offline-admission h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  main .offline-admission h1 {
+    font-size: 25px;
+  }
+}
+
+main .offline-admission .billow-text {
+  margin-top: 2rem;
+}
+
+main .offline-admission .billow-text p {
+  color: #383838;
+  text-align: justify;
+}
+
+main .offline-admission .billow-text .sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #F79B20;
+}
+
+main .offline-admission .billow-text p.sub ul li {
+  text-align: justify;
+  list-style-type: square;
+  color: #383838 !important;
+}
+
+main .section-2 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+main .section-3 .fees-structure .intro-fees {
+  font-size: 40px;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #0A93FE;
+  border-bottom: 2px solid;
+}
+
+@media screen and (max-width: 900px) {
+  main .section-3 .fees-structure .intro-fees {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main .section-3 .fees-structure .intro-fees {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  main .section-3 .fees-structure .intro-fees {
+    font-size: 25px;
+  }
+}
+
+main .section-3 .fees-info-img img {
+  height: 80%;
+  width: 80%;
+}
+
+footer {
+  margin-top: 10rem;
+}
+/*# sourceMappingURL=admission_process.css.map */

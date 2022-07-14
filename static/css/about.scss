@@ -1,0 +1,155 @@
+@import './global/fonts' , './global/footer' ,'./global/navigation' ,'./global/responsive' ,'./global/variable';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@mixin heading_font {
+    font-family: $roboto;
+    color: $color_yellow;
+    font-size: 40px;
+    font-weight: 600;
+    @include mobile{
+        font-size: 30px;
+    }
+    @include mobile-s{
+        font-size: 25px;
+    }
+}
+
+@mixin para {
+    font-family: $poppins;
+    color: $color_black;
+    font-size: 17px;
+    line-height: 2.5rem;
+    word-wrap: break-word;
+    width: 100%;
+    text-align: justify;
+    @include mobile{
+        text-align: justify;
+        font-size: 14px;
+        line-height: 2rem;
+    }
+}
+
+main{
+    margin-top: 10rem;
+    .hero-area{
+        .ml10 {
+            @include title();
+            @include tablet{
+                font-size: 40px;
+            }
+            
+            @include mobile{
+                font-size:35px;
+            }
+            @include mobile-s{
+                font-size:20px;
+            }
+          }
+            @include tablet{
+                font-size: 40px;
+        }
+    }
+    section.section-1{
+        margin-top: 10rem;
+        margin-bottom: 15rem;
+        .about-academy{
+            .intro{
+                @include heading_font();
+                margin-bottom: 3rem;
+            }
+            .about-para{
+                @include para();
+            }
+        }
+
+        .our-vision{
+            margin-top: 10rem;
+            .intro-vision{
+                @include heading_font();
+                margin-bottom: 4rem;
+            }
+            .vision-para{
+                @include para();
+            }
+        }
+        .our-mission{
+            margin-top: 10rem;
+            .intro-mission{
+                @include heading_font();
+                margin-bottom: 4rem;
+            }
+            .mission-para{
+                @include para();
+            }
+        }
+        .general-rules{
+            margin-top: 10rem;
+            .intro-general-rl{
+                @include heading_font();
+                margin-bottom: 4rem;
+            }
+            .rules{
+                @include para();
+                list-style-type: none;
+                &::before {
+                    content: "\25A0";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                    color: $color_yellow; /* Change the color */
+                    font-weight: bold; /* If you want it to be bold */
+                    display: inline-block; /* Needed to add space between the bullet and the text */
+                    width: 1em; /* Also needed for space (tweak if needed) */
+                    margin-left: -1em; /* Also needed for space (tweak if needed) */
+                  }
+
+            }
+        }
+        .fees-structure{
+            margin-top: 10rem;
+            .intro-fees{
+                @include heading_font();
+            }
+            .fees-info-img{
+                margin-top: 5rem;
+                img{
+                    height: 80%;
+                    width: 80%;
+                    @include tablet-m{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .our-facility{
+            margin-top: 10rem;
+            .intro-facilitys{
+                @include heading_font();
+                margin-bottom: 4rem;
+            }
+            .library{
+                margin-bottom: 3rem;
+                li{
+                    @include heading_font();
+                    font-size: 35px;
+                    list-style-type: none;
+                    border-bottom: 2px solid ;
+                    margin-bottom: 2rem;
+                    @include mobile{
+                        font-size: 20px;   
+                    }
+
+                }
+                .para-library{
+                    @include para();
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

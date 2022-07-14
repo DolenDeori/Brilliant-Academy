@@ -1,0 +1,50 @@
+@import "./global/variable", "./global/footer", "./global/navigation", "./global/responsive";
+
+main {
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    .title-text {
+        h1 {
+            @include title();
+        }
+    }
+    .auth-message-area {
+        margin-top: 7rem;
+        .auth-img {
+            img {
+                height: 100%;
+                width: 100%;
+                // max-width: 400px;
+                float: left;
+                margin: 1rem 2rem 1rem 0rem;
+                border-radius: 10px;
+            }
+        }
+        .message-area {
+            .name {
+                font-family: $roboto;
+                font-weight: 700;
+            }
+            .writer-name {
+                font-family: $roboto;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+            p.message-body {
+                @include para();
+                span.selutation {
+                    font-family: $roboto;
+                    font-weight: 500;
+                }
+            }
+            .BOD{
+                img{
+                    height: 190px;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
