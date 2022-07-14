@@ -3,7 +3,7 @@ url = "https://www.fast2sms.com/dev/bulkV2"
 def send_it(message , number):
     my_data = {
     # Your default Sender ID
-    'sender_id': 'ITADON', 
+    'sender_id': '<senderID>', 
 
     # Put your message here!
     'message': message, 
@@ -18,7 +18,7 @@ def send_it(message , number):
 
     # create a dictionary
     headers = {
-        'authorization': '2eLHdT4QX7hT9DoZBQgiBaSgd1VgVnlgyHM5azi7PAInKYbNJLiSJ6vCHuCi',
+        'authorization': '',
         'Content-Type': "application/x-www-form-urlencoded",
         'Cache-Control': "no-cache"
     }
