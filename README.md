@@ -4,7 +4,7 @@
 
 ![GitHub Repo Stars](https://img.shields.io/github/stars/DolenDeori/Brilliant-Academy)
 ![GitHub Forks](https://img.shields.io/github/forks/DolenDeori/Brilliant-Academy)
-![GitHub Issues](https://img.shields.io/github/issuesDolenDeori/Brilliant-Academy)
+![GitHub Issues](https://img.shields.io/github/issues/DolenDeori/Brilliant-Academy)
 ![GitHub License](https://img.shields.io/github/license/DolenDeori/Brilliant-Academy)
 
 Welcome to the Brilliant Academy repository!
