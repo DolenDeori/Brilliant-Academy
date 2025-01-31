@@ -7,7 +7,6 @@ Welcome to the Brilliant Academy repository!
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 
 ## About
 Brilliant Academy is an educational platform designed to provide high-quality learning resources for students of all ages. Our mission is to make education accessible and engaging for everyone.
@@ -40,21 +39,3 @@ To start the development server, run:
 npm start
 ```
 Open your browser and go to `http://localhost:3000` to access the application.
-
-## Contributing
-We welcome contributions from the community! To contribute, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch:
-    ```bash
-    git checkout -b feature-branch
-    ```
-3. Make your changes and commit them:
-    ```bash
-    git commit -m "Add new feature"
-    ```
-4. Push to the branch:
-    ```bash
-    git push origin feature-branch
-    ```
-5. Open a pull request.
