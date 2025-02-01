@@ -2,10 +2,17 @@
 
 # Brilliant Academy
 
-![GitHub Repo Stars](https://img.shields.io/github/stars/DolenDeori/Brilliant-Academy)
-![GitHub Forks](https://img.shields.io/github/forks/DolenDeori/Brilliant-Academy)
-![GitHub Issues](https://img.shields.io/github/issues/DolenDeori/Brilliant-Academy)
-![GitHub License](https://img.shields.io/github/license/DolenDeori/Brilliant-Academy)
+![GitHub Repo stars](https://img.shields.io/github/stars/DolenDeori/PeerConnect?style=social)
+![GitHub forks](https://img.shields.io/github/forks/DolenDeori/PeerConnect?style=social)
+![GitHub issues](https://img.shields.io/github/issues/DolenDeori/PeerConnect)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/DolenDeori/PeerConnect)
+![GitHub license](https://img.shields.io/github/license/DolenDeori/PeerConnect)
+<br>
+![GitHub last commit](https://img.shields.io/github/last-commit/DolenDeori/PeerConnect)
+![GitHub repo size](https://img.shields.io/github/repo-size/DolenDeori/PeerConnect.svg?label=Repo%20size)
+![GitHub pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
+![Github code style pretter](https://img.shields.io/badge/code%20style-prettier-ff69b4.svg?)
+
 
 Welcome to the Brilliant Academy repository!
 
