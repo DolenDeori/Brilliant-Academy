@@ -1,6 +1,4 @@
-
-
-
+import header1 from "../assets/images/img_header1.jpg";
 export const navigation = [
   { name: "Home", href: "#", active: true },
   { name: "About Us", href: "#", active: false },
@@ -10,3 +8,5 @@ export const navigation = [
   { name: "Research", href: "#", active: false },
   { name: "Contact Us", href: "#", active: false },
 ];
+
+export const images = { header1 };
