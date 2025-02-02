@@ -2,26 +2,28 @@ import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { navigation } from "../constant";
+import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className="bg-white">
+    <div className="bg-white font-funnel">
       <header className="absolute inset-x-0 top-0 z-50">
+        {/* --------- Navigation Start ----------- */}
         <nav
           aria-label="Global"
-          className="flex items-center justify-between px-4 py-0 lg:px-8 bg-gray-100 border-b border-gray-200"
+          className="flex items-center justify-between px-4 py-4 lg:py-2 lg:px-8"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
+            <a href="#" className="-m-1.5 p-1.5 text-xl">
+              <span className="text-yellow-400 font-funnel-semi-bold">
+                Brilliant
+              </span>
+              Academy
             </a>
           </div>
+
+          {/* Hamberger Manue */}
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -32,23 +34,37 @@ const Navigation = () => {
               <Bars3Icon aria-hidden="true" className="size-6" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-8">
+          <div className="hidden lg:flex lg:gap-x-6">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm/6 font-semibold text-gray-900 block h-full py-4 px-1 border-b-2 border-transparent hover:border-red-400 hover:text-red-400 duration-150"
+                className={`text-sm/6  ${
+                  item.active ? "text-red-400" : "text-gray-500"
+                } block border-b-2 ${
+                  item.active ? "" : "border-transparent"
+                } py-2 ${
+                  item.active ? "hover:border-red-400" : "hover:border-gray-600"
+                } ${
+                  item.active ? "hover:text-red-400" : "hover:text-gray-800"
+                } duration-150`}
               >
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm/6 font-semibold text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
+            <a
+              href="#"
+              className="text-sm/6 border p-1 px-4 border-red-400 text-red-400 hover:bg-red-400 hover:text-white duration-200 flex justify-center items-center gap-2"
+            >
+              Register/Log in <ChevronRightIcon className="h-5 w-5 " />
             </a>
           </div>
         </nav>
+        {/* ---------- Navigation End ----------------- */}
+
+        {/* ------------ Mobile Navigation -------------- */}
         <Dialog
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
@@ -57,13 +73,11 @@ const Navigation = () => {
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  alt=""
-                  src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                  className="h-8 w-auto"
-                />
+              <a href="#" className="-m-1.5 p-1.5 text-xl">
+                <span className="text-yellow-400 font-funnel-semi-bold">
+                  Brilliant
+                </span>
+                Academy
               </a>
               <button
                 type="button"
@@ -81,7 +95,9 @@ const Navigation = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                      className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 ${
+                        item.active ? "text-red-400" : "text-gray-900"
+                      }  hover:bg-gray-50`}
                     >
                       {item.name}
                     </a>
@@ -90,15 +106,16 @@ const Navigation = () => {
                 <div className="py-6">
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    className="text-sm/6 border p-1 px-4 border-red-400 text-red-400 hover:bg-red-400 hover:text-white duration-200 flex justify-center items-center gap-2"
                   >
-                    Log in
+                    Register/Log in <ChevronRightIcon className="h-5 w-5 " />
                   </a>
                 </div>
               </div>
             </div>
           </DialogPanel>
         </Dialog>
+        {/* ------------ Mobile Navigation -------------- */}
       </header>
     </div>
   );
