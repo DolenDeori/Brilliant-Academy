@@ -1,9 +1,12 @@
+
+
+
 export const navigation = [
-  { name: "Home", href: "#" },
-  { name: "About Us", href: "#" },
-  { name: "Academics", href: "#" },
-  { name: "Admissions", href: "#" },
-  { name: "Departments", href: "#" },
-  { name: "Research", href: "#" },
-  { name: "Contact Us", href: "#" },
+  { name: "Home", href: "#", active: true },
+  { name: "About Us", href: "#", active: false },
+  { name: "Academics", href: "#", active: false },
+  { name: "Admissions", href: "#", active: false },
+  { name: "Departments", href: "#", active: false },
+  { name: "Research", href: "#", active: false },
+  { name: "Contact Us", href: "#", active: false },
 ];
