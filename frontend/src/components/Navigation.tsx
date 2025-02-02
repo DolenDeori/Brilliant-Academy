@@ -12,7 +12,7 @@ const Navigation = () => {
         {/* --------- Navigation Start ----------- */}
         <nav
           aria-label="Global"
-          className="flex items-center justify-between px-4 py-4 lg:py-2 lg:px-8"
+          className="flex items-center justify-between px-4 py-4 lg:py-0 lg:px-8 bg-white"
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5 text-xl">
@@ -39,9 +39,9 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className={`text-sm/6  ${
+                className={`text-sm/6 py-4 ${
                   item.active ? "text-red-400" : "text-gray-500"
-                } block border-b-2 ${
+                } block border-b-3 ${
                   item.active ? "" : "border-transparent"
                 } py-2 ${
                   item.active ? "hover:border-red-400" : "hover:border-gray-600"
@@ -56,7 +56,7 @@ const Navigation = () => {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="#"
-              className="text-sm/6 border p-1 px-4 border-red-400 text-red-400 hover:bg-red-400 hover:text-white duration-200 flex justify-center items-center gap-2"
+              className="text-sm/6 font-funnel-medium border-2 p-1 px-4.5 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white duration-200 flex justify-center items-center gap-2 rounded-full"
             >
               Register/Log in <ChevronRightIcon className="h-5 w-5 " />
             </a>
@@ -97,7 +97,7 @@ const Navigation = () => {
                       href={item.href}
                       className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 ${
                         item.active ? "text-red-400" : "text-gray-900"
-                      }  hover:bg-gray-50`}
+                      }  hover:bg-gray-50 font-funnel`}
                     >
                       {item.name}
                     </a>
@@ -106,9 +106,9 @@ const Navigation = () => {
                 <div className="py-6">
                   <a
                     href="#"
-                    className="text-sm/6 border p-1 px-4 border-red-400 text-red-400 hover:bg-red-400 hover:text-white duration-200 flex justify-center items-center gap-2"
+                    className="text-sm/6 border-2 p-1 px-4 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white duration-200 flex justify-center items-center gap-2 font-funnel-medium rounded-full"
                   >
-                    Register/Log in <ChevronRightIcon className="h-5 w-5 " />
+                    Register/Log in <ChevronRightIcon className="h-5 w-5" />
                   </a>
                 </div>
               </div>
