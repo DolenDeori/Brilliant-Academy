@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react";
 import Navigation from "./components/Navigation";
-// import axios from "axios";
+import axios from "axios";
 
 function App() {
   const [data, setData] = useState([]);
-  // const apiUrl = import.meta.env.VITE_API_URL;
-  // console.log(apiUrl);
-  // let datares;
-  // axios
-  //   .get(`${apiUrl}admission_form/`)
-  //   .then((res) => {
-  //     datares = res.data;
-  //     setData(datares);
-  //   })
-  //   .catch((err) => {
-  //     console.log(err);
-  //   });
+  const apiUrl = import.meta.env.VITE_API_URL;
+  console.log(apiUrl);
+  let datares;
+  axios
+    .get(`${apiUrl}admission_form/`)
+    .then((res) => {
+      datares = res.data;
+      setData(datares);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
   return (
     <>
       <Navigation />
