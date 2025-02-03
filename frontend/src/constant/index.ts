@@ -1,12 +1,10 @@
 import header1 from "../assets/images/img_header1.jpg";
-export const navigation = [
-  { name: "Home", href: "#", active: true },
-  { name: "About Us", href: "#", active: false },
-  { name: "Academics", href: "#", active: false },
-  { name: "Admissions", href: "#", active: false },
-  { name: "Departments", href: "#", active: false },
-  { name: "Research", href: "#", active: false },
-  { name: "Contact Us", href: "#", active: false },
-];
 
 export const images = { header1 };
+
+export const navigation = [
+  { name: "Home", href: "/", active: true },
+  { name: "Admissions", href: "#", active: false },
+  { name: "About Us", href: "/about", active: false },
+  { name: "Contact Us", href: "/contact", active: false },
+];
